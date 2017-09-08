@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title></title>
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/bootstrap.css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" />
+<!-- 以下两个插件用于在IE8以及以下版本浏览器支持HTML5元素和媒体查询，如果不需要用可以移除 -->
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+</head>
+<body class="row">
+<!-- <div class="maplebg"></div> -->
+  <div class="col-lg-2 col-md-0 col-xs-0"></div>
+  <div class="col-lg-8 col-md-12 col-xs-12">
+  <div class="maplebg"></div>
+	<!--标题栏-->
+	<header id="webTitle">
+		<div id="TopLeft1">
+			<h1>
+				<img id="logo" src="images/logo.png" alt="中国矿业大学电子商务系网站" />
+			</h1>
+		</div>
+		<div id="TopLeft2" class="col-xs-0"></div>
+		<div id="TopLeft3" >
+			<h1>
+				<img id="logo" src="images/logo2.png" alt="中国矿业大学电子商务系网站" />
+			</h1>
+		</div>
+		<div id="TopLeft4">
+			<a href="login.html">登录</a>&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="connect.html">联系我们</a>
+		</div>		
+	</header>
+
+<!--主体部分-->
+	<div style="clear:both;height:20px;"></div>
+	<nav id="nav">
+			<div class="navbar navbar-default" role="navigation" style="margin-bottom: 0px;">
+			<ul class="nav navbar-nav">
+	 			<li id="start" class="active"><a href="javascript:void(0)">首页</a></li>
+        		<li class="dropdown">
+         		 <a href="##" data-toggle="dropdown" class="dropdown-toggle">专业概况<span class="caret"></span></a>
+         		 <ul class="dropdown-menu">
+        			<li id="introduce"><a href="javascript:void(0)">培养方案</a></li>
+        			<li id="master"><a href="javascript:void(0)">专业介绍</a></li>
+        			<li id="plan"><a href="javascript:void(0)">教学计划</a></li>
+          		 </ul>
+       			</li>
+       			<li class="dropdown">
+         		 <a href="javascript:void(0)" data-toggle="dropdown" class="dropdown-toggle">师资队伍<span class="caret"></span></a>
+         		 <ul class="dropdown-menu">
+        			<li id="teacher"><a href="javascript:void(0)">老师风采</a></li>
+        			<li id="describe"><a href="javascript:void(0)">师资概况</a></li>
+        			<li id="phonenumber"><a href="javascript:void(0)">老师通讯录</a></li>
+          		 </ul>
+       			</li>
+       			<li class="dropdown">
+         		 <a href="javascript:void(0)" data-toggle="dropdown" class="dropdown-toggle">最新发布<span class="caret"></span></a>
+         		 <ul class="dropdown-menu">
+        			<li id="news"><a href="javascript:void(0)">最新动态/新闻</a></li>
+        			<li id="inform"><a href="javascript:void(0)">通知公告</a></li>
+        			<li id="res"><a href="javascript:void(0)">相关资料下载</a></li>
+          		 </ul>
+       			</li>
+       			<li id="masterpiece"><a href="javascript:void(0)">学生作品</a></li>
+			</ul>
+			</div>
+		</nav>
+
+	 <iframe id="mainFrame" name="mainFrame" scrolling="no" src="start.html"
+            frameborder="0" style="padding: 0px; width: 100%; height:auto;"></iframe>
+	 <div style="clear:both;"></div>
+<!--底部-->
+	<footer id="i_footer">
+		<section id="f_section1">
+			<p id="right">版权所有：中国矿业大学电子商务专业</p>
+			<p id="address"><address>地址：江苏省徐州市大学路1号中国矿业大学南湖校区</address></p>
+			<p id="right">邮编：221116</p>
+		</section>
+		<section id="f_section2">
+			<div id="connect">联系我们：</div>			
+		</section>
+	</footer>
+  </div>
+  <div class="col-lg-2 col-md-0 col-xs-0"></div>
+
+	<script type="text/javascript" src="js/jquery-2.2.3.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.terseBanner.min.js"></script>
+	<script type="text/javascript">
+		 var d = "<div class='maple'>🍁<div>";
+   		 setInterval(function () {
+        var f = $(document).width();
+        var e = Math.random() * f - 100; // 枫叶的定位left值
+        var o = 0.2 + Math.random(); // 枫叶的透明度
+        var fon = 25 + Math.random() * 10; // 枫叶大小
+        var l = e - 350 + 200 * Math.random(); // 枫叶的横向位移
+        var k = 8000 + 5000 * Math.random();
+        var deg = Math.random() * 360; // 枫叶的方向
+        $(d).clone().appendTo(".maplebg").css({
+            left: e + "px",
+            opacity: o,
+            transform: "rotate(" + deg + "deg)",
+            "font-size": fon,
+        }).animate({
+            top: "550px",
+            left: l + "px",
+            opacity: 0.1,
+        }, k, "linear", function () {
+            $(this).remove()
+        })
+    }, 500)
+		 $(function(){
+       $(".navbar-nav").click(function(){
+            $(".dropdown ul li").each(function(index){
+             $(this).click(function(){
+                var ifr = window.frames[0];
+                var src = $(this).attr('id') + '.html';
+                ifr.location=src;
+                $("ul li").removeClass('active');
+                $(this).toggleClass('active');
+                startInit('mainFrame', 880);
+             })
+            })
+       });
+		 	
+			$("#start,#masterpiece").click(function(){
+				var ifr = window.frames[0];
+				var src = $(this).attr('id') + '.html';
+				ifr.location=src;
+				$("ul li").removeClass('active');
+				$(this).toggleClass('active');
+        startInit('mainFrame', 880);
+			})
+		 })		
+	</script>
+	   
+	<script type="text/javascript">
+	var browserVersion = window.navigator.userAgent.toUpperCase();
+	var isOpera = browserVersion.indexOf("OPERA") > -1 ? true : false;
+	var isFireFox = browserVersion.indexOf("FIREFOX") > -1 ? true : false;
+	var isChrome = browserVersion.indexOf("Chrome") > -1 > -1 ? true : false;
+	var isSafari = browserVersion.indexOf("SAFARI") > -1 ? true : false;
+	var isIE = (!!window.ActiveXObject || "ActiveXObject" in window);
+	var isIE9More = (! -[1, ] == false);
+	function reinitIframe(iframeId, minHeight) {
+    try {
+        var iframe = document.getElementById(iframeId);
+        var bHeight = 0;
+        var dHeight = 0;
+        if (isChrome == true || isSafari == true)
+            bHeight = iframe.contentWindow.document.body.clientHeight;
+        if (isFireFox == true)
+            dHeight = iframe.contentWindow.document.documentElement.offsetHeight + 2;
+        else if (isIE == false && isOpera == false)
+            dHeight = iframe.contentWindow.document.documentElement.scrollHeight;
+        else if (isIE == true && isIE9More) {//ie9+
+            var heightDeviation = bHeight - eval("window.IE9MoreRealHeight" + iframeId);
+            if (heightDeviation == 0) {
+                bHeight += 3;
+            } else if (heightDeviation != 3) {
+                eval("window.IE9MoreRealHeight" + iframeId + "=" + bHeight);
+                bHeight += 3;
+            }
+        }
+        else//ie[6-8]、OPERA
+            bHeight += 3;
+
+        var height = Math.max(bHeight, dHeight);
+        if (height < minHeight) height = minHeight;
+        iframe.style.height = height + "px";
+    } catch (ex) { }
+}
+function startInit(iframeId, minHeight) {
+    eval("window.IE9MoreRealHeight" + iframeId + "=0");
+    //window.setInterval("reinitIframe('" + iframeId + "'," + minHeight + ")", 100);
+    reinitIframe(iframeId, minHeight);
+} 
+startInit('mainFrame', 880);
+	</script>
+</body>
+</html>
