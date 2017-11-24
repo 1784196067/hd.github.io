@@ -230,7 +230,16 @@
 	}
 
 
+	#news_section img{
+		width:56px;
+		height: 56px;
+		position: absolute;
+	}
 
+	#news_section h1{
+		position: relative;
+		height: 68px;
+	}
 
 
 	img[src^=section]{
@@ -299,6 +308,7 @@
 		}
 		aside{
 			width: 28%;
+			float: right;
 			height: auto;
 		}
 	}
@@ -388,6 +398,7 @@
 		}
 		aside{
 			width: 23%;
+			float: right;
 		}
 		li[id$=_2]{
 			width:400px;
@@ -430,6 +441,7 @@
 		}
 		aside{
 			width: 100%;
+			float: block;
 		}
 		li[id$=_2]{
 			width:250px;
